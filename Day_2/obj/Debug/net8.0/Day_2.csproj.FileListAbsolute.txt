@@ -12,3 +12,4 @@
 /Users/michaelcuellar/Advent_of_Code_2023/Day_2/obj/Debug/net8.0/Day_2.pdb
 /Users/michaelcuellar/Advent_of_Code_2023/Day_2/obj/Debug/net8.0/Day_2.genruntimeconfig.cache
 /Users/michaelcuellar/Advent_of_Code_2023/Day_2/obj/Debug/net8.0/ref/Day_2.dll
+/Users/michaelcuellar/Advent_of_Code_2023/Day_2/obj/Debug/net8.0/Day_2.sourcelink.json
