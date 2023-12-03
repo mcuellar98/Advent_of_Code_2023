@@ -50,13 +50,13 @@ foreach (string line in lines) {
       maxOfEachColor[color] = num;
     }
   }
-  total += getMinPower(maxOfEachColor);
+  total += getPower(maxOfEachColor);
   foreach (var key in maxOfEachColor.Keys) {
     maxOfEachColor[key] = 0;
   }
 }
 
-static double getMinPower(Dictionary<string, double> obj) {
+static double getPower(Dictionary<string, double> obj) {
     double total = 1;
     foreach (var value in obj.Values) {
       total *= value;

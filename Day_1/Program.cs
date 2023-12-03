@@ -50,22 +50,29 @@ class Program {
       { "8", "8" },
       { "9", "9" },
     };
-    int counter = 1;
-    foreach (string line in lines) {
-      Console.WriteLine(counter);
-      counter++;
-      foreach (var key in numStrings.Keys) {
-        int index = line.IndexOf(key);
-        if (index != -1) {
-          indicesAndValues.Add(new IndexValueObj { Index = index, Value = numStrings[key] });
+        // using StreamWriter outputFile = new StreamWriter("output.txt");
+        int counter = 1;
+        foreach (string line in lines)
+        {
+            foreach (var key in numStrings.Keys)
+            {
+                int index = line.IndexOf(key);
+                if (index != -1)
+                {
+                    indicesAndValues.Add(new IndexValueObj { Index = index, Value = numStrings[key] });
+                }
+            }
+            foreach (var key in indicesAndValues) {
+              Console.WriteLine(key.Index.ToString() + ' ' + key.Value);
+            }
+            // outputFile.WriteLine(getSum(indicesAndValues));
+            Console.WriteLine(counter.ToString() + ' ' + getSum(indicesAndValues));
+            counter++;
+            total += getSum(indicesAndValues);
+            indicesAndValues = [];
         }
-      }
-      // Console.WriteLine(getSum(indicesAndValues));
-      total += getSum(indicesAndValues);
-      indicesAndValues = [];
+        Console.WriteLine(total);
     }
-    Console.WriteLine(total);
-  }
 
   static int getSum(List<IndexValueObj> list) {
     list = [.. list.OrderBy(obj => obj.Index)];
