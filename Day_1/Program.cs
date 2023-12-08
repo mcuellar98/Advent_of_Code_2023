@@ -16,6 +16,8 @@
 
 //Part 2
 
+using System.ComponentModel;
+
 class Program {
   class IndexValueObj
   {
@@ -56,14 +58,17 @@ class Program {
         {
             foreach (var key in numStrings.Keys)
             {
-                int index = line.IndexOf(key);
-                if (index != -1)
-                {
-                    indicesAndValues.Add(new IndexValueObj { Index = index, Value = numStrings[key] });
+              //get all occurences of number
+                List<int> indices = getIndicesOfNum(line, key);
+                foreach (int index in indices) {
+                  if (index != -1)
+                  {
+                      indicesAndValues.Add(new IndexValueObj { Index = index, Value = numStrings[key] });
+                  }
                 }
             }
             foreach (var key in indicesAndValues) {
-              Console.WriteLine(key.Index.ToString() + ' ' + key.Value);
+              // Console.WriteLine(key.Index.ToString() + ' ' + key.Value);
             }
             // outputFile.WriteLine(getSum(indicesAndValues));
             Console.WriteLine(counter.ToString() + ' ' + getSum(indicesAndValues));
@@ -77,6 +82,24 @@ class Program {
   static int getSum(List<IndexValueObj> list) {
     list = [.. list.OrderBy(obj => obj.Index)];
     return int.Parse(list[0].Value + list[list.Count()-1].Value);
+  }
+
+  static List<int> getIndicesOfNum(string line, string num) {
+    List<int> result = [];
+    for (var i = 0; i < line.Length; i++) {
+      if (line[i] == num[0]) {
+        string currentSubstring = "";
+        int j = i;
+        while (j - i <= num.Length && j < line.Length) {
+          currentSubstring+= line[j];
+          if (currentSubstring == num) {
+            result.Add(i);
+          }
+          j++;
+        }
+      }
+    }
+    return result;
   }
 }
 
