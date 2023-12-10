@@ -52,13 +52,11 @@ class Program {
       { "8", "8" },
       { "9", "9" },
     };
-        // using StreamWriter outputFile = new StreamWriter("output.txt");
         int counter = 1;
         foreach (string line in lines)
         {
             foreach (var key in numStrings.Keys)
             {
-              //get all occurences of number
                 List<int> indices = getIndicesOfNum(line, key);
                 foreach (int index in indices) {
                   if (index != -1)
@@ -68,9 +66,7 @@ class Program {
                 }
             }
             foreach (var key in indicesAndValues) {
-              // Console.WriteLine(key.Index.ToString() + ' ' + key.Value);
             }
-            // outputFile.WriteLine(getSum(indicesAndValues));
             Console.WriteLine(counter.ToString() + ' ' + getSum(indicesAndValues));
             counter++;
             total += getSum(indicesAndValues);

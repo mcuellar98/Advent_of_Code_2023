@@ -1,0 +1,15 @@
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/bin/Debug/net8.0/Day_9
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/bin/Debug/net8.0/Day_9.deps.json
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/bin/Debug/net8.0/Day_9.runtimeconfig.json
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/bin/Debug/net8.0/Day_9.dll
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/bin/Debug/net8.0/Day_9.pdb
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.AssemblyInfoInputs.cache
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.AssemblyInfo.cs
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.csproj.CoreCompileInputs.cache
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.sourcelink.json
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.dll
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/refint/Day_9.dll
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.pdb
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/Day_9.genruntimeconfig.cache
+/Users/michaelcuellar/Advent_of_Code_2023/Day_9/obj/Debug/net8.0/ref/Day_9.dll
